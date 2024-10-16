@@ -4,29 +4,34 @@ function App() {
   const [inputUrl, setInputUrl] = useState('');
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null); // Estado para manejar errores
+  const [error, setError] = useState(null); 
 
   const fetchApi = async () => {
     setLoading(true);
     setError(null);
 
     const url = `https://opulent-funicular-7vprxvr6qxgqfp4xv-8080.app.github.dev/api/download?url=${encodeURIComponent(inputUrl)}`;
-
+    const url_local = `http://localhost:8080/api/download?url=${encodeURIComponent(inputUrl)}`;
     try {
       const response = await fetch(url);
-      if (response.status === 429) {
-        console.error('Demasiadas solicitudes. Esperando antes de intentar nuevamente...');
-        await new Promise(resolve => setTimeout(resolve, 5000));
-        return fetchApi(); // Intenta de nuevo
-      }
       if (!response.ok) {
         throw new Error('Error en la respuesta de la API');
       }
       const responseJSON = await response.json();
       setData(responseJSON);
     } catch (error) {
-      setError(error.message);
-      console.error('Error:', error);
+      try{
+        const response = await fetch(url_local);
+        if (!response.ok) {
+          throw new Error('Error en la respuesta de la API');
+        }
+        const responseJSON = await response.json();
+        setData(responseJSON);
+      }catch{
+        setError(error.message);
+        console.error('Error:', error);
+      }
+     
     } finally {
       setLoading(false);
     }

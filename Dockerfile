@@ -1,11 +1,12 @@
 # Fase de construcción
 FROM node:alpine AS build
 WORKDIR /app
-COPY package.json ./
+COPY package.json yarn.lock ./
 RUN yarn install
 COPY . .
 RUN yarn build
-RUN ls -la /app/dist
+
+# Fase de producción
 FROM node:alpine
 WORKDIR /app
 COPY --from=build /app/dist ./build
