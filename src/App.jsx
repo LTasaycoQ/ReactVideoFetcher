@@ -114,10 +114,10 @@ function App() {
         <div className='contenedor'>
 
           <div className='btnEnlaces'>
-            <a href={data.enlace_video} target="_blank" rel="noopener noreferrer">Cuenta Creador</a>
+            <a className='btnCuentaCreador' href={data.enlace_video} target="_blank" rel="noopener noreferrer">Cuenta Creador</a>
 
-            <a href={data.descarga_video} target="_blank" rel="noopener noreferrer">Descarga el Video</a>
-            <a href={data.descarga_audio} target="_blank" rel="noopener noreferrer">Descarga el Audio</a>
+            <a className='btnOcultoReponsive' href={data.descarga_video} target="_blank" rel="noopener noreferrer">Descarga el Video</a>
+            <a  className='btnOcultoReponsive' href={data.descarga_audio} target="_blank" rel="noopener noreferrer">Descarga el Audio</a>
           </div>
 
           <div className='contenido'>
@@ -130,29 +130,36 @@ function App() {
                   <span className='firma'>ADS - Write To quatravfxcontact@gmail.com</span>
                 </div>
               </div>
+              <div className='detallecontendor'>
+                <div className='seccionDEtallesCuenta'>
+                  <ul>
+                    <li>
+                      comentario
+                    </li>
+                    <li>
+                      reproduccion
+                    </li>
 
-              <div className='seccionDEtallesCuenta'>
-                <ul>
-                  <li>
-                    comentario
-                  </li>
-                  <li>
-                    reproduccion
-                  </li>
-
-                  <li>
-                    like
-                  </li>
+                    <li>
+                      like
+                    </li>
 
 
-                  <li>
-                    compartido
-                  </li>
-                </ul>
+                    <li>
+                      compartido
+                    </li>
+                  </ul>
+                </div>
               </div>
-
             </div>
             <video poster={data.Portada} controls src={data.descarga_video}></video>
+            
+          </div>
+
+          <div className='btnOCultosDescagas'>
+             <a className='btnOcultoReponsivedebajo' href={data.descarga_video} target="_blank" rel="noopener noreferrer">Descarga el Video</a>
+            <a  className='btnOcultoReponsivedebajo' href={data.descarga_audio} target="_blank" rel="noopener noreferrer">Descarga el Audio</a>
+          
           </div>
 
         </div>
@@ -224,23 +231,23 @@ function App() {
         </div>
 
         <div className='contenedorPorque'>
-        <div className='seccionPorq'>
-          <img className='imagenporq' src="https://cdn.prod.website-files.com/653fc861910f21af1e67ed85/66bca9d7c6d64f089ce60e2b_create%20shorts.webp" />
+          <div className='seccionPorq'>
+            <img className='imagenporq' src="https://cdn.prod.website-files.com/653fc861910f21af1e67ed85/66bca9d7c6d64f089ce60e2b_create%20shorts.webp" />
 
-          <div className='contenidoPorq'>
-            <h1>¿Por qué elegir Downime??</h1>
-            <div className='listaBeneficios'>
+            <div className='contenidoPorq'>
+              <h1>¿Por qué elegir Downime??</h1>
+              <div className='listaBeneficios'>
 
-              <p>
-                Downime te permite descargar videos en alta definición y elimina automáticamente las marcas de agua en TikTok, para que disfrutes de contenido limpio y sin interrupciones. No necesitas registrarte ni instalar programas; solo pega el enlace y descarga rápidamente desde cualquier dispositivo. Es un servicio gratuito, sin límites de descarga y muy fácil de usar.              </p>
+                <p>
+                  Downime te permite descargar videos en alta definición y elimina automáticamente las marcas de agua en TikTok, para que disfrutes de contenido limpio y sin interrupciones. No necesitas registrarte ni instalar programas; solo pega el enlace y descarga rápidamente desde cualquier dispositivo. Es un servicio gratuito, sin límites de descarga y muy fácil de usar.              </p>
+              </div>
+
             </div>
 
           </div>
 
+
         </div>
-
-
-</div>
 
 
 
