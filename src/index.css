@@ -119,7 +119,7 @@ button:hover {
 
 .imagen_avatar {
   border-radius: 50%;
-  border: 5px solid rgb(36, 181, 152);
+  border: 5px solid #24b79a;
   width: 120px;
   margin-right: 15px;
   height: 120px;
@@ -155,7 +155,8 @@ video {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
-  a{
+
+  a {
     background-color: aquamarine;
     color: #242424;
     padding: 10px;
@@ -164,11 +165,12 @@ video {
   }
 }
 
-.btnEnlaces a:hover{
+.btnEnlaces a:hover {
   background-color: rgb(255, 111, 0);
   transition: all 0.5s;
   color: white;
 }
+
 .nombreCreador {
   border-radius: 20px;
   color: rgb(255, 128, 0);
@@ -204,52 +206,198 @@ video {
   }
 }
 
-.misRedes{
+.misRedes {
   position: fixed;
-  margin-top: 100px;
-  background-color: red;
+  display: grid;
+  height: 80%;
+  justify-content: center;
   align-items: center;
-  ul{
+
+  ul {
     text-decoration: none;
     align-items: center;
     display: grid;
     text-align: center;
     justify-content: center;
-    li{
+
+    li {
       border: 1px solid rgb(43, 209, 214);
-  
+
     }
-    .Github{
-     
+
+    .Github {
+
       background-color: #000000;
       padding: 12px;
       display: flex;
     }
 
-    .facebook{
+    .facebook {
       background-color: #165990;
       padding: 12px;
       display: flex;
     }
-      .linkedin{
+
+    .linkedin {
       background-color: #166790;
       padding: 12px;
       display: flex;
     }
-      .whatsap{
+
+    .whatsap {
       background-color: #249435;
       padding: 12px;
       display: flex;
     }
-    .youtube{
+
+    .youtube {
       background-color: #c50000;
       padding: 12px;
       display: flex;
-     }
-    .email{
+    }
+
+    .email {
       background-color: #393939;
       padding: 12px;
       display: flex;
     }
   }
+}
+
+.contendioLadingPage {
+  display: grid;
+
+  justify-content: center;
+}
+
+.seccionDequetrata {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenidoDequetrata {
+  background-color: #373737;
+  padding: 20px;
+  margin-top: 40px;
+  width: 800px;
+  border-radius: 10px;
+  border: 2px solid rgb(74, 74, 74);
+
+  .listaBeneficios {
+    padding: 16px;
+
+
+  }
+
+  h1 {
+    color: aqua;
+  }
+
+}
+
+.imagenQees {
+  width: 250px;
+  height: 280px;
+}
+
+.manejopagina {
+  background-color: #373737;
+  padding: 20px;
+  margin-top: 40px;
+  width: 78rem;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid rgb(74, 74, 74);
+
+  h1 {
+    color: aqua;
+  }
+}
+
+
+.contenidoPorq {
+  background-color: #373737;
+  padding: 20px;
+  width: 800px;
+  border-radius: 10px;
+  border: 2px solid rgb(74, 74, 74);
+
+  h1 {
+    color: aqua;
+  }
+}
+
+.seccionPorq {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenporq {
+  width: 230px;
+  height: 230px;
+}
+
+ h1 {
+    color: aqua;
+  }
+.comoUsarl {
+  width: 81rem;
+  display: flex;
+  justify-content: space-between;
+margin-top: 20px;
+  span {
+
+    display: grid;
+    padding: 10px;
+    background-color: #373737;
+    border-radius: 10px;
+    border: 2px solid rgb(74, 74, 74);
+  }
+
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  background-color: #3f3f3f;
+}
+ 
+
+::-webkit-scrollbar-thumb{
+  background-color: #3dafab;
+  border-radius: 20px;
+}
+
+
+
+
+.decoracion{
+  width: 100%;
+  height: 10px;
+  background-color: #15b796;
+}
+
+
+
+.footer {
+  background-color: #141414;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
