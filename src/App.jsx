@@ -45,8 +45,9 @@ function App() {
         </div>
 
         <div className='menuAppDiv'>
-          <span>¿Que te ofrece Downime?</span>
-          <span>¿Por que deberias usarlo?</span>
+          <span className='MenuVisibilidad'>¿Que te ofrece Downime?</span>
+          <span className='menuOculto'>¿Que te ofrece Downime?</span>
+          <span className='MenuVisibilidad'>¿Por que deberias usarlo?</span>
         </div>
 
 
@@ -126,7 +127,7 @@ function App() {
                 <div className='letras_titulo'>
                   <span className='nombreCreador'>Nombre:  {data.Nickname}</span>
                   <span className='titulo'>{data.titulo}</span>
-                  <span className='firma'>ADS - Write To Inst✒️ quatravfxcontact@gmail.com</span>
+                  <span className='firma'>ADS - Write To quatravfxcontact@gmail.com</span>
                 </div>
               </div>
 
@@ -173,7 +174,7 @@ function App() {
               <p>
                 Downime te permite descargar videos en alta calidad desde TikTok, YouTube, Facebook e Instagram de forma rápida y sencilla. También puedes extraer únicamente el audio en formato MP3, lo que resulta ideal para guardar música, entrevistas o podcasts. A diferencia de otras herramientas, nuestros videos descargados desde TikTok no contienen marcas de agua, lo que los hace perfectos para uso personal o creativo. Todo esto sin necesidad de crear una cuenta, sin instalar aplicaciones y sin enfrentarte a anuncios molestos.
               </p>
-              <p>
+              <p className='dataOculta'>
                 Nuestra plataforma funciona desde cualquier dispositivo, ya sea móvil, tableta o computadora, y está optimizada para ofrecerte una experiencia fluida y segura. No hay límites en la cantidad de descargas que puedes realizar, y todo el proceso es completamente anónimo. Con Downime, obtienes velocidad, simplicidad y privacidad, todo en un solo lugar.
               </p>
             </div>
@@ -185,10 +186,10 @@ function App() {
 
 
         <br />
-        <div>
+        <div className='contenedorComoUsar'>
 
-          <div >
-            <h1>¿Como usar Downime?</h1>
+          <div>
+            <h1 className='comoUsarTitulo'>¿Como usar Downime?</h1>
             <div className='comoUsarl'>
 
               <span>
@@ -213,14 +214,16 @@ function App() {
 
 
 
-
-        <div className='manejopagina'>
-          <h1>Uso responsable</h1>
-          <p>
-            Downime está diseñado para uso personal. Por favor, respeta los derechos de autor y las políticas de cada plataforma. No utilices este servicio para redistribuir contenido sin permiso.
-          </p>
+        <div className='contenedorUso'>
+          <div className='manejopagina'>
+            <h1>Uso responsable</h1>
+            <p>
+              Downime está diseñado para uso personal. Por favor, respeta los derechos de autor y las políticas de cada plataforma. No utilices este servicio para redistribuir contenido sin permiso.
+            </p>
+          </div>
         </div>
 
+        <div className='contenedorPorque'>
         <div className='seccionPorq'>
           <img className='imagenporq' src="https://cdn.prod.website-files.com/653fc861910f21af1e67ed85/66bca9d7c6d64f089ce60e2b_create%20shorts.webp" />
 
@@ -237,7 +240,7 @@ function App() {
         </div>
 
 
-
+</div>
 
 
 
@@ -253,28 +256,28 @@ function App() {
 
       </div>
 
- <footer class="footer">
-  <div class="footer-content">
-    <h3>Downime</h3>
-    <p>Descarga videos y audios en alta calidad desde TikTok, YouTube, Facebook e Instagram. Gratis, rápido y sin marcas de agua.</p>
+      <footer class="footer">
+        <div class="footer-content">
+          <h3>Downime</h3>
+          <p>Descarga videos y audios en alta calidad desde TikTok, YouTube, Facebook e Instagram. Gratis, rápido y sin marcas de agua.</p>
 
-    <nav class="footer-nav">
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#faq">FAQ</a>
-      <a href="#privacidad">Privacidad</a>
-      <a href="#terminos">Términos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+          <nav class="footer-nav">
+            <a href="#como-funciona">Cómo funciona</a>
+            <a href="#faq">FAQ</a>
+            <a href="#privacidad">Privacidad</a>
+            <a href="#terminos">Términos</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
 
-    <div class="footer-social">
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://facebook.com" target="_blank">Facebook</a>
-      <a href="https://instagram.com" target="_blank">Instagram</a>
-    </div>
+          <div class="footer-social">
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+          </div>
 
-    <p class="footer-copy">&copy; 2025 Downime. Todos los derechos reservados.</p>
-  </div>
-</footer>
+          <p class="footer-copy">&copy; 2025 Downime. Todos los derechos reservados.</p>
+        </div>
+      </footer>
 
 
     </div >

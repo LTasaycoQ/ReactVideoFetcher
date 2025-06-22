@@ -50,7 +50,6 @@
   background-color: rgb(23, 105, 109);
   padding: 10px;
   border-radius: 20px;
-  margin-left: 10px;
   margin-right: 18px;
 
 }
@@ -343,14 +342,16 @@ video {
   height: 230px;
 }
 
- h1 {
-    color: aqua;
-  }
+h1 {
+  color: aqua;
+}
+
 .comoUsarl {
   width: 81rem;
   display: flex;
   justify-content: space-between;
-margin-top: 20px;
+  margin-top: 20px;
+
   span {
 
     display: grid;
@@ -362,13 +363,13 @@ margin-top: 20px;
 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 6px;
   background-color: #3f3f3f;
 }
- 
 
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: #3dafab;
   border-radius: 20px;
 }
@@ -376,7 +377,7 @@ margin-top: 20px;
 
 
 
-.decoracion{
+.decoracion {
   width: 100%;
   height: 10px;
   background-color: #15b796;
@@ -400,4 +401,183 @@ margin-top: 20px;
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.MenuVisibilidad {
+  display: block;
+}
+
+.menuOculto {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+  .tituloPage {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .MenuVisibilidad {
+    display: none;
+  }
+
+  .menuOculto {
+    display: block;
+  }
+
+  .menuAppDiv {
+    gap: 50px;
+    background-color: rgb(23, 105, 109);
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.9s;
+  }
+
+
+  .divInputbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+
+    input {
+      width: 450px;
+    }
+  }
+
+
+
+  .seccionDequetrata {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .contendioLadingPage {
+    display: grid;
+    justify-content: center;
+  }
+
+  .contenidoDequetrata {
+    width: 410px;
+    font-size: 20px;
+
+    .dataOculta {
+      display: none;
+    }
+
+  }
+
+  .comoUsarTitulo {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contenedorComoUsar {
+    display: grid;
+    justify-content: center;
+  }
+
+  .comoUsarl {
+    display: grid;
+    gap: 30px;
+    width: 450px;
+
+    justify-content: center;
+
+    span {
+
+      font-size: 20px;
+    }
+  }
+
+  .contenedorUso {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .manejopagina {
+    width: 400px;
+  }
+
+
+  .contenedorPorque {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .seccionPorq {
+    width: 450px;
+  }
+
+  .imagenporq {
+    display: none;
+  }
+
+
+  .contenido {
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+  }
+
+
+
+
+  .seccionDEtallesCuenta {
+    width: 450px;
+    background-color: rgb(51, 100, 144);
+
+    border-radius: 20px;
+    margin-top: 40px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      list-style: none;
+
+      li {
+        padding: 10px;
+        border-radius: 15px;
+      }
+    }
+
+
+  }
+
+
+  .perfil_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .letras_titulo {
+    width: 300px;
+  }
+
+  .imagen_avatar {
+    border-radius: 50%;
+    border: 5px solid #24b79a;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  video {
+    width: 440px;
+    height: 250px;
+    margin-left: 18px;
+    background-color: rgb(34, 82, 70);
+  }
+
 }
