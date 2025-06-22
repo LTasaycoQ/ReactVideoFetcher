@@ -210,14 +210,17 @@ video {
   background-color: red;
   align-items: center;
   ul{
+    text-decoration: none;
     align-items: center;
     display: grid;
     text-align: center;
     justify-content: center;
     li{
       border: 1px solid rgb(43, 209, 214);
+  
     }
     .Github{
+     
       background-color: #000000;
       padding: 12px;
       display: flex;
@@ -240,6 +243,11 @@ video {
     }
     .youtube{
       background-color: #c50000;
+      padding: 12px;
+      display: flex;
+     }
+    .email{
+      background-color: #393939;
       padding: 12px;
       display: flex;
     }
