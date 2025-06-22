@@ -10,7 +10,7 @@ function App() {
     setLoading(true);
     setError(null);
 
-    const url = `https://all-donwload-videos-api.onrender.com/api/download?url=${encodeURIComponent(inputUrl)}`;
+    const url = `https://rising-chiquia-ltasaycoqs-e668c9e2.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
