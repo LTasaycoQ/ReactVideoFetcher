@@ -142,10 +142,15 @@ button:hover {
   margin-left: 10px;
 }
 
+.divVideo {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
 video {
   width: 300px;
   height: 250px;
-  margin-left: 18px;
   background-color: rgb(34, 82, 70);
 }
 
@@ -415,7 +420,7 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 510px) and (min-width: 401px) {
 
   .tituloPage {
     margin-left: 10px;
@@ -638,5 +643,781 @@ h1 {
     padding: 10px;
     text-decoration: none;
     border-radius: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) and (min-width: 510px) {
+
+  .tituloPage {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .MenuVisibilidad {
+    display: none;
+  }
+
+  .menuOculto {
+    display: block;
+  }
+
+  .menuAppDiv {
+    gap: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.9s;
+  }
+
+
+  .divInputbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+
+    input {
+      width: 450px;
+    }
+  }
+
+
+
+  .seccionDequetrata {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .contendioLadingPage {
+    display: grid;
+    justify-content: center;
+  }
+
+  .contenidoDequetrata {
+    width: 450px;
+    font-size: 20px;
+
+    .dataOculta {
+      display: none;
+    }
+
+  }
+
+  .comoUsarTitulo {
+    margin-top: 20px;
+
+    text-align: center;
+  }
+
+  .contenedorComoUsar {
+    display: grid;
+    font-size: 20px;
+
+    justify-content: center;
+  }
+
+  .comoUsarl {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .contenedorUso {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .manejopagina {
+    width: 450px;
+  }
+
+
+  .contenedorPorque {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .seccionPorq {
+    width: 500px;
+  }
+
+  .imagenporq {
+    display: none;
+  }
+
+  .divVideo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .contenido {
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 480px;
+  }
+
+
+  .detallecontendor {
+    display: grid;
+
+    justify-content: center;
+  }
+
+  .seccionDEtallesCuenta {
+
+    background-color: rgb(55, 87, 116);
+
+    border-radius: 20px;
+    margin-top: 20px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      list-style: none;
+
+      li {
+        padding: 10px;
+        border-radius: 15px;
+      }
+    }
+
+
+  }
+
+
+  .perfil_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .letras_titulo {
+    width: 100%;
+  }
+
+  .nombreCreador {
+    font-size: 20px;
+  }
+
+  .titulo {
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+  }
+
+  .firma {
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+
+  }
+
+  .imagen_avatar {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+  }
+
+
+  video {
+    width: 470px;
+    height: 250px;
+    background-color: rgb(34, 82, 70);
+  }
+
+  .btnCuentaCreador {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 450px;
+  }
+
+
+
+  .btnOcultoReponsive {
+    display: none;
+  }
+
+  .btnOCultosDescagas {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .btnOcultoReponsivedebajo {
+    background-color: rgb(22, 83, 90);
+    color: #ffffff;
+    width: 450px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) and (min-width: 680px) {
+
+  .tituloPage {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .MenuVisibilidad {
+    display: none;
+  }
+
+  .menuOculto {
+    display: block;
+  }
+
+  .menuAppDiv {
+    gap: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.9s;
+  }
+
+
+  .divInputbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+
+    input {
+      width: 540px;
+    }
+  }
+
+
+
+  .seccionDequetrata {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .contendioLadingPage {
+    display: grid;
+    justify-content: center;
+  }
+
+  .contenidoDequetrata {
+    width: 610px;
+    font-size: 20px;
+
+    .dataOculta {
+      display: none;
+    }
+
+  }
+
+  .comoUsarTitulo {
+    margin-top: 20px;
+
+    text-align: center;
+  }
+
+  .contenedorComoUsar {
+    display: grid;
+    font-size: 20px;
+
+    justify-content: center;
+  }
+
+  .comoUsarl {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .contenedorUso {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .manejopagina {
+    width: 610px;
+  }
+
+
+  .contenedorPorque {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .seccionPorq {
+    width: 650px;
+  }
+
+  .imagenporq {
+    display: none;
+  }
+
+  .divVideo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .contenido {
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+
+  .detallecontendor {
+    display: grid;
+    width: 620px;
+    justify-content: center;
+  }
+
+  .seccionDEtallesCuenta {
+
+    background-color: rgb(55, 87, 116);
+    width: 650px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      list-style: none;
+
+      li {
+        padding: 10px;
+        border-radius: 15px;
+      }
+    }
+
+
+  }
+
+
+  .perfil_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .letras_titulo {
+    width: 100%;
+  }
+
+  .nombreCreador {
+    font-size: 20px;
+  }
+
+  .titulo {
+    position: relative;
+    top: 0px;
+    font-size: 18px;
+  }
+
+  .firma {
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+
+  }
+
+  .imagen_avatar {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+
+
+  video {
+    width: 640px;
+    height: 450px;
+    background-color: rgb(34, 82, 70);
+  }
+
+  .btnCuentaCreador {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 610px;
+  }
+
+
+
+  .btnOcultoReponsive {
+    display: none;
+  }
+
+  .btnOCultosDescagas {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .btnOcultoReponsivedebajo {
+    background-color: rgb(22, 83, 90);
+    color: #ffffff;
+    width: 620px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 800px) {
+
+  .tituloPage {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .MenuVisibilidad {
+    display: none;
+  }
+
+  .menuOculto {
+    display: block;
+
+  }
+
+  .menuPrincipal{
+    font-size: 20px;
+  }
+
+  .menuAppDiv {
+    gap: 50px;
+    padding: 12px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.9s;
+ 
+  }
+
+
+  .divInputbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+    margin-right: 25px;
+    margin-left: 25px;
+
+    input {
+      height: 60px;
+      font-size: 20px;
+      width: 620px;
+    }
+
+    button {
+      font-size: 20px;
+      width: 140px;
+    }
+  }
+
+
+
+  .seccionDequetrata {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .contendioLadingPage {
+    display: grid;
+    justify-content: center;
+  }
+
+  .contenidoDequetrata {
+    width: 720px;
+    font-size: 20px;
+
+    .dataOculta {
+      display: block;
+    }
+
+  }
+
+  .comoUsarTitulo {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contenedorComoUsar {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+  }
+
+
+  .comoUsarl {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+
+    span {
+      font-size: 20px;
+      width: 730px;
+    }
+  }
+
+  .contenedorUso {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .manejopagina {
+    width: 720px;
+  }
+
+
+  .contenedorPorque {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .seccionPorq {
+    width: 770px;
+  }
+
+  .imagenporq {
+    display: none;
+  }
+
+  .divVideo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .contenido {
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+
+  .detallecontendor {
+    display: grid;
+    width: 740px;
+    justify-content: center;
+  }
+
+  .seccionDEtallesCuenta {
+
+    background-color: rgb(55, 87, 116);
+    width: 750px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      list-style: none;
+
+      li {
+        padding: 10px;
+        border-radius: 15px;
+      }
+    }
+
+
+  }
+
+
+  .perfil_user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .letras_titulo {
+    width: 100%;
+  }
+
+  .nombreCreador {
+    font-size: 20px;
+  }
+
+  .titulo {
+    position: relative;
+    top: 0px;
+    font-size: 18px;
+  }
+
+  .firma {
+    position: relative;
+    top: 0px;
+    font-size: 20px;
+
+  }
+
+  .imagen_avatar {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+
+
+  video {
+    width: 740px;
+    height: 450px;
+    background-color: rgb(34, 82, 70);
+  }
+
+  .btnCuentaCreador {
+    text-align: center;
+
+  }
+
+
+
+  .btnOcultoReponsive {
+    display: blo;
+  }
+
+  .btnOCultosDescagas {
+    display: grid;
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  .btnOcultoReponsivedebajo {
+    display: none;
+  }
+
+
+
+  .btnEnlaces {
+
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    a {
+      background-color: aquamarine;
+      color: #242424;
+      font-weight: bolder;
+      font-size: 20px;
+      padding: 15px;
+      text-decoration: none;
+      border-radius: 20px;
+    }
   }
 }

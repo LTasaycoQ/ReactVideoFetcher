@@ -46,7 +46,8 @@ function App() {
 
         <div className='menuAppDiv'>
           <span className='MenuVisibilidad'>¿Que te ofrece Downime?</span>
-          <span className='menuOculto'>¿Que te ofrece Downime?</span>
+                    <span className='menuOculto'>¿Que te ofrece Downime?</span>
+
           <span className='MenuVisibilidad'>¿Por que deberias usarlo?</span>
         </div>
 
@@ -152,8 +153,9 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className='divVideo'>
             <video poster={data.Portada} controls src={data.descarga_video}></video>
-            
+            </div>
           </div>
 
           <div className='btnOCultosDescagas'>
@@ -195,7 +197,7 @@ function App() {
         <br />
         <div className='contenedorComoUsar'>
 
-          <div>
+          <div className='divComoUsar'>
             <h1 className='comoUsarTitulo'>¿Como usar Downime?</h1>
             <div className='comoUsarl'>
 
