@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function App() {
-  const [inputUrl, setInputUrl] = useState('');
+  let [inputUrl, setInputUrl] = useState('');
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -10,12 +10,20 @@ function App() {
     setLoading(true);
     setError(null);
 
+    if (inputUrl=="") {
+      console-log("no hay video");
+      return
+    }
+
     const url = `https://rising-chiquia-ltasaycoqs-e668c9e2.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
+    
+
     try {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error('Error en la respuesta de la API');
       }
+      setInputUrl(""); 
       const responseJSON = await response.json();
       setData(responseJSON);
     } catch (error) {
@@ -46,7 +54,7 @@ function App() {
 
         <div className='menuAppDiv'>
           <span className='MenuVisibilidad'>¿Que te ofrece Downime?</span>
-                    <span className='menuOculto'>¿Que te ofrece Downime?</span>
+          <span className='menuOculto'>¿Que te ofrece Downime?</span>
 
           <span className='MenuVisibilidad'>¿Por que deberias usarlo?</span>
         </div>
@@ -95,10 +103,11 @@ function App() {
           </li>
         </ul>
       </div>
-      <h1 className='tituloPage'>Descarga Videos de tus redes sociales</h1>
+      <h1 className='tituloPage'>Descarga Videos de <span className='spantitulo'> tus redes sociales</span></h1>
       <div className='divInputbtn'>
         <input
           type="text"
+          required
           value={inputUrl}
           onChange={(e) => setInputUrl(e.target.value)}
           placeholder="Ingresa la URL del video"
@@ -117,8 +126,8 @@ function App() {
           <div className='btnEnlaces'>
             <a className='btnCuentaCreador' href={data.enlace_video} target="_blank" rel="noopener noreferrer">Cuenta Creador</a>
 
-            <a className='btnOcultoReponsive' href={data.descarga_video} target="_blank" rel="noopener noreferrer">Descarga el Video</a>
-            <a  className='btnOcultoReponsive' href={data.descarga_audio} target="_blank" rel="noopener noreferrer">Descarga el Audio</a>
+            <a className='btnOcultoReponsive' download href={data.descarga_video}>Descarga el Video</a>
+            <a className='btnOcultoReponsive' download href={data.descarga_audio}>Descarga el Audio</a>
           </div>
 
           <div className='contenido'>
@@ -154,14 +163,14 @@ function App() {
               </div>
             </div>
             <div className='divVideo'>
-            <video poster={data.Portada} controls src={data.descarga_video}></video>
+              <video poster={data.Portada} controls src={data.descarga_video}></video>
             </div>
           </div>
 
           <div className='btnOCultosDescagas'>
-             <a className='btnOcultoReponsivedebajo' href={data.descarga_video} target="_blank" rel="noopener noreferrer">Descarga el Video</a>
-            <a  className='btnOcultoReponsivedebajo' href={data.descarga_audio} target="_blank" rel="noopener noreferrer">Descarga el Audio</a>
-          
+            <a className='btnOcultoReponsivedebajo' download href={data.descarga_video} >Descarga el Video</a>
+            <a className='btnOcultoReponsivedebajo' download href={data.descarga_audio} >Descarga el Audio</a>
+
           </div>
 
         </div>
