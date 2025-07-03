@@ -10,20 +10,20 @@ function App() {
     setLoading(true);
     setError(null);
 
-    if (inputUrl=="") {
-      console-log("no hay video");
+    if (inputUrl == "") {
+      console - log("no hay video");
       return
     }
 
     const url = `https://rising-chiquia-ltasaycoqs-e668c9e2.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
-    
+
 
     try {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error('Error en la respuesta de la API');
       }
-      setInputUrl(""); 
+      setInputUrl("");
       const responseJSON = await response.json();
       setData(responseJSON);
     } catch (error) {
@@ -53,10 +53,10 @@ function App() {
         </div>
 
         <div className='menuAppDiv'>
-          <span className='MenuVisibilidad'>¿Que te ofrece Downime?</span>
-          <span className='menuOculto'>¿Que te ofrece Downime?</span>
+          <span className='MenuVisibilidad'><a href="#QueHcer">¿Que te ofrece Downime?</a></span>
+          <span className='menuOculto'><a href="#QueHcer">¿Que te ofrece Downime?</a></span>
 
-          <span className='MenuVisibilidad'>¿Por que deberias usarlo?</span>
+          <span className='MenuVisibilidad'><a href="#Porque">¿Por que deberias usarlo?</a></span>
         </div>
 
 
@@ -143,20 +143,32 @@ function App() {
               <div className='detallecontendor'>
                 <div className='seccionDEtallesCuenta'>
                   <ul>
-                    <li>
-                      comentario
-                    </li>
-                    <li>
-                      reproduccion
-                    </li>
 
                     <li>
-                      like
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class=" vistas bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                      </svg>
+                      {data.Vistas || "privado"} 
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=" currentColor" class=" comentarios bi bi-chat-fill" viewBox="0 0 16 16">
+                        <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
+                      </svg>
+                      {data.Comentarios || "privado"}
+                    </li>
+                    <li>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class=" corazon bi bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                      </svg> {data.Like || "privado"} 
                     </li>
 
 
                     <li>
-                      compartido
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="share bi bi-share" viewBox="0 0 16 16">
+                        <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
+                      </svg>
+                      {data.Compartidos || "privado"}
                     </li>
                   </ul>
                 </div>
@@ -187,7 +199,7 @@ function App() {
         <div className='seccionDequetrata'>
 
           <div className='contenidoDequetrata'>
-            <h1>¿Qué puedes hacer con Downime?</h1>
+            <h1 id='QueHcer'> ¿Qué puedes hacer con Downime?</h1>
             <div className='listaBeneficios'>
               <p>
                 Downime te permite descargar videos en alta calidad desde TikTok, YouTube, Facebook e Instagram de forma rápida y sencilla. También puedes extraer únicamente el audio en formato MP3, lo que resulta ideal para guardar música, entrevistas o podcasts. A diferencia de otras herramientas, nuestros videos descargados desde TikTok no contienen marcas de agua, lo que los hace perfectos para uso personal o creativo. Todo esto sin necesidad de crear una cuenta, sin instalar aplicaciones y sin enfrentarte a anuncios molestos.
@@ -246,7 +258,7 @@ function App() {
             <img className='imagenporq' src="https://cdn.prod.website-files.com/653fc861910f21af1e67ed85/66bca9d7c6d64f089ce60e2b_create%20shorts.webp" />
 
             <div className='contenidoPorq'>
-              <h1>¿Por qué elegir Downime??</h1>
+              <h1 id='Porque'>¿Por qué elegir Downime??</h1>
               <div className='listaBeneficios'>
 
                 <p>
