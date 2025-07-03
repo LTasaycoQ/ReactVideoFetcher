@@ -133,7 +133,7 @@ function App() {
           <div className='contenido'>
             <div>
               <div className='perfil_user'>
-                <img className='imagen_avatar' src={data.Avatar} alt={data.Nickname} />
+                <img className='imagen_avatar' src={data.Avatar || "https://holatelcel.com/wp-content/uploads/2020/09/instagram-foto-de-perfil-4.jpg"} alt={data.Nickname} />
                 <div className='letras_titulo'>
                   <span className='nombreCreador'>Nombre:  {data.Nickname}</span>
                   <span className='titulo'>{data.titulo}</span>

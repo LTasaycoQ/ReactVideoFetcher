@@ -9,7 +9,7 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -180,9 +180,9 @@ video {
     background-color: rgb(19, 188, 171);
     color: #363636;
     text-align: center;
-    width: 200px;
     font-weight: bolder;
     padding: 10px;
+    width: 200px;
     text-decoration: none;
     border-radius: 20px;
   }
@@ -652,11 +652,19 @@ h1 {
     margin-left: 18px;
   }
 
+  .btnEnlaces {
+
+    margin-bottom: 40px;
+    background-color: #37134b;
+    a{
+      width: 100%;
+    }
+  }
+
   .btnCuentaCreador {
     text-align: center;
     font-size: 15px;
     font-weight: bolder;
-    width: 370px;
   }
 
 
@@ -675,6 +683,8 @@ h1 {
 
   .btnOcultoReponsivedebajo {
     color: #ffffff;
+    background-color: #242a35;
+
     width: 350px;
     text-align: center;
     font-weight: bolder;
