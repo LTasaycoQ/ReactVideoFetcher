@@ -12,11 +12,17 @@
   scroll-behavior: smooth;
 
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #292929;
   font-size: 14px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+
+  --mi-color-principal: #3498db;
+  --mi-color-secundario: rgb(246, 92, 54);
+
+
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -34,7 +40,7 @@
 
 
 .nombreAppDiv {
-  background-color: rgb(15, 128, 116);
+  background-color: var(--mi-color-secundario);
   padding: 10px;
   border-radius: 20px;
   margin-left: 18px;
@@ -43,7 +49,7 @@
 .menuAppDiv {
   display: flex;
   gap: 50px;
-  background-color: rgb(15, 128, 116);
+  background-color: var(--mi-color-secundario);
   padding: 10px;
   border-radius: 20px;
   padding-left: 55px;
@@ -57,7 +63,7 @@
 }
 
 .contactAppDiv {
-  background-color: rgb(27, 99, 92);
+  background-color: var(--mi-color-secundario);
   padding: 10px;
   border-radius: 20px;
   margin-right: 18px;
@@ -78,7 +84,7 @@
 }
 
 .spantitulo {
-  color: rgb(19, 188, 171);
+  color: var(--mi-color-secundario);
 }
 
 .divInputbtn {
@@ -92,6 +98,8 @@
     border-radius: 10px 0px 0 10px;
     padding-left: 10px;
     border: none;
+    color: black;
+    background-color: #d1cccc;
     outline: none;
   }
 
@@ -101,7 +109,7 @@
     color: white;
     font-weight: bolder;
     width: 100px;
-    background-color: rgb(15, 128, 116);
+    background-color: rgb(232, 64, 64);
     border-radius: 0px 10px 10px 0;
   }
 }
@@ -119,7 +127,8 @@
 
 
 button:hover {
-  background-color: rgb(19, 188, 171);
+  background-color: var(--mi-color-secundario);
+  color: #3c3c3c;
 }
 
 .contenedor {
@@ -177,8 +186,8 @@ video {
   margin-bottom: 40px;
 
   a {
-    background-color: rgb(19, 188, 171);
-    color: #363636;
+    background-color: var(--mi-color-secundario);
+    color: white;
     text-align: center;
     font-weight: bolder;
     padding: 10px;
@@ -189,7 +198,7 @@ video {
 }
 
 .btnEnlaces a:hover {
-  background-color: rgb(19, 188, 171);
+  background-color: rgb(155, 55, 27);
   transition: all 0.5s;
   color: white;
 }
@@ -211,13 +220,14 @@ video {
 
 .seccionDEtallesCuenta {
   width: 500px;
-  background-color: rgb(43, 43, 62);
   font-weight: bolder;
-  border-radius: 20px;
   margin-top: 40px;
 
   ul {
+    background-color: rgb(75, 70, 70);
     display: flex;
+
+    border-radius: 20px;
     justify-content: space-around;
     align-items: center;
 
@@ -238,7 +248,7 @@ video {
 }
 
 .comentarios {
-  color: rgb(68, 187, 234);
+  color: rgb(68, 234, 148);
 
 }
 
@@ -248,7 +258,7 @@ video {
 }
 
 .share {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 247, 255);
 
 }
 
@@ -342,7 +352,7 @@ video {
   }
 
   h1 {
-    color: aqua;
+    color: var(--mi-color-secundario);
   }
 
 }
@@ -362,7 +372,7 @@ video {
   border: 2px solid rgb(74, 74, 74);
 
   h1 {
-    color: aqua;
+    color: var(--mi-color-secundario);
   }
 }
 
@@ -375,7 +385,7 @@ video {
   border: 2px solid rgb(74, 74, 74);
 
   h1 {
-    color: aqua;
+    color: var(--mi-color-secundario);
   }
 }
 
@@ -394,7 +404,7 @@ video {
 }
 
 h1 {
-  color: aqua;
+  color: var(--mi-color-secundario);
 }
 
 .comoUsarl {
@@ -421,7 +431,7 @@ h1 {
 
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3dafab;
+  background-color: var(--mi-color-secundario);
   border-radius: 20px;
 }
 
@@ -590,7 +600,6 @@ h1 {
   .seccionDEtallesCuenta {
 
     width: 380px;
-    background-color: rgb(51, 100, 144);
 
     border-radius: 20px;
     margin-top: 40px;
@@ -655,8 +664,8 @@ h1 {
   .btnEnlaces {
 
     margin-bottom: 40px;
-    background-color: #37134b;
-    a{
+
+    a {
       width: 100%;
     }
   }
@@ -683,7 +692,7 @@ h1 {
 
   .btnOcultoReponsivedebajo {
     color: #ffffff;
-    background-color: #242a35;
+    background-color: var(--mi-color-secundario);
 
     width: 350px;
     text-align: center;

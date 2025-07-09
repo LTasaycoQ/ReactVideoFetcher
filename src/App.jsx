@@ -21,7 +21,7 @@ function App() {
     try {
       const response = await fetch(url);
       if (!response.ok) {
-        throw new Error('Error en la respuesta de la API');
+        throw new Error('Error al procesar Video intentelo de nuevo');
       }
       setInputUrl("");
       const responseJSON = await response.json();
@@ -65,7 +65,8 @@ function App() {
         </div>
       </div>
 
-      <div className='misRedes'>
+
+      {/* <div className='misRedes'>
         <ul>
           <li className='Github'>
             <a href="https://github.com/LTasaycoQ"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -103,6 +104,11 @@ function App() {
           </li>
         </ul>
       </div>
+
+ */}
+
+
+      
       <h1 className='tituloPage'>Descarga Videos de <span className='spantitulo'> tus redes sociales</span></h1>
       <div className='divInputbtn'>
         <input
@@ -133,7 +139,7 @@ function App() {
           <div className='contenido'>
             <div>
               <div className='perfil_user'>
-                <img className='imagen_avatar' src={data.Avatar || "https://holatelcel.com/wp-content/uploads/2020/09/instagram-foto-de-perfil-4.jpg"} alt={data.Nickname} />
+                <img className='imagen_avatar' src={data.Avatar} alt={data.Nickname} />
                 <div className='letras_titulo'>
                   <span className='nombreCreador'>Nombre:  {data.Nickname}</span>
                   <span className='titulo'>{data.titulo}</span>
