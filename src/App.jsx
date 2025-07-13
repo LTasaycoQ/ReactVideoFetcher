@@ -15,7 +15,7 @@ function App() {
       return
     }
 
-    const url = `https://agricultural-anjela-ltasaycoqs-765b093c.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
+    const url = `https://rising-chiquia-ltasaycoqs-e668c9e2.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
 
 
     try {
@@ -139,9 +139,9 @@ function App() {
           <div className='contenido'>
             <div>
               <div className='perfil_user'>
-                <img className='imagen_avatar' src={data.Avatar} alt={data.Nickname} />
+                <img className='imagen_avatar' src={data.Avatar || "https://kinsta.com/es/wp-content/uploads/sites/8/2022/07/incognito-mode-1024x512.jpg"} alt={data.Nickname} />
                 <div className='letras_titulo'>
-                  <span className='nombreCreador'>Nombre:  {data.Nickname}</span>
+                  <span className='nombreCreador'>Nombre:  {data.Nickname || "Desconocido"}</span>
                   <span className='titulo'>{data.titulo}</span>
                   <span className='firma'>ADS - Write To quatravfxcontact@gmail.com</span>
                 </div>
