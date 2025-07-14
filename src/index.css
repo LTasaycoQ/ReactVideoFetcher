@@ -26,6 +26,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container_error {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+.error {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.error p {
+  width: 100%;
+  font-weight: bolder;
+ 
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgb(188, 59, 39);
+
+}
+
+
 .anuncio {
   font-size: 9px;
   align-items: center;
