@@ -22,7 +22,7 @@ function App() {
       return
     }
 
-    const url = `https://fuzzy-parakeet-q7p9x79jrgvw24j7w-8080.app.github.dev/api/download?url=${encodeURIComponent(inputUrl)}`;
+    const url = `https://agricultural-anjela-ltasaycoqs-765b093c.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
 
 
     try {
