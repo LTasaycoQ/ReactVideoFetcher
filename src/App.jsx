@@ -65,9 +65,6 @@ function App() {
         </div>
       </div>
 
-
-
-
       <h1 className='tituloPage'>Descarga Videos de <span className='spantitulo'> tus redes sociales</span></h1>
       <div className='divInputbtn'>
         <input
@@ -88,6 +85,10 @@ function App() {
 
           <div className="error">
             <p>Error al procesar .Por favor vuela a intentar</p>
+          
+            <img className='imagenError' src="https://upload-os-bbs.hoyolab.com/upload/2024/04/12/e97cb9e3fbd1d79f914255f6214afbfc_8297816975899591934.png?x-oss-process=image%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70" alt="icono-Confundido" />
+
+
           </div>
         </div>
 
@@ -160,8 +161,62 @@ function App() {
 
         </div>
       ) : (
-        <div className='divEsperando'>
-          <p>Esperando respuesta...</p>
+        <div  className='divEsperando'>
+          {loading ?  <div>
+
+
+<svg viewBox="0 0 240 240" height="240" width="240" class="pl">
+  <circle
+    stroke-linecap="round"
+    stroke-dashoffset="-330"
+    stroke-dasharray="0 660"
+    stroke-width="20"
+    stroke="#000"
+    fill="none"
+    r="105"
+    cy="120"
+    cx="120"
+    class="pl__ring pl__ring--a"
+  ></circle>
+  <circle
+    stroke-linecap="round"
+    stroke-dashoffset="-110"
+    stroke-dasharray="0 220"
+    stroke-width="20"
+    stroke="#000"
+    fill="none"
+    r="35"
+    cy="120"
+    cx="120"
+    class="pl__ring pl__ring--b"
+  ></circle>
+  <circle
+    stroke-linecap="round"
+    stroke-dasharray="0 440"
+    stroke-width="20"
+    stroke="#000"
+    fill="none"
+    r="70"
+    cy="120"
+    cx="85"
+    class="pl__ring pl__ring--c"
+  ></circle>
+  <circle
+    stroke-linecap="round"
+    stroke-dasharray="0 440"
+    stroke-width="20"
+    stroke="#000"
+    fill="none"
+    r="70"
+    cy="120"
+    cx="155"
+    class="pl__ring pl__ring--d"
+  ></circle>
+</svg>
+
+            
+            </div> : "Esperando respuesta..."}
+          
         </div>
       )
       }
