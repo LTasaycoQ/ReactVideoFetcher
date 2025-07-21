@@ -19,8 +19,8 @@
   -webkit-font-smoothing: antialiased;
 
 
-  --mi-color-principal: #2d6a8f;
-  --mi-color-secundario: rgb(12, 124, 210);
+  --mi-color-principal: #3eaaed;
+  --mi-color-secundario: rgb(12, 107, 180);
 
 
   -moz-osx-font-smoothing: grayscale;
@@ -181,7 +181,7 @@
 
 
 button:hover {
-  background-color: var(--mi-color-principal);
+  background-color: #1b2a3c;
 }
 
 .contenedor {
@@ -258,7 +258,7 @@ video {
 
 .nombreCreador {
   border-radius: 20px;
-  color: rgb(255, 128, 0);
+  color: rgb(10, 178, 234);
   margin-right: 8px;
   font-weight: bolder;
   font-size: 30px;
@@ -405,7 +405,7 @@ video {
   }
 
   h1 {
-    color: var(--mi-color-secundario);
+    color: var(--mi-color-principal);
   }
 
 }
@@ -425,7 +425,7 @@ video {
   border: 2px solid rgb(74, 74, 74);
 
   h1 {
-    color: var(--mi-color-secundario);
+    color: var(--mi-color-principal);
   }
 }
 
@@ -438,7 +438,7 @@ video {
   border: 2px solid rgb(74, 74, 74);
 
   h1 {
-    color: var(--mi-color-secundario);
+    color: var(--mi-color-principal);
   }
 }
 
@@ -457,7 +457,7 @@ video {
 }
 
 h1 {
-  color: var(--mi-color-secundario);
+  color: var(--mi-color-principal);
 }
 
 .comoUsarl {
