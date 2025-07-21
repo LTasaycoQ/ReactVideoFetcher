@@ -19,7 +19,7 @@
   -webkit-font-smoothing: antialiased;
 
 
-  --mi-color-principal: #66aad4;
+  --mi-color-principal: #2d6a8f;
   --mi-color-secundario: rgb(12, 124, 210);
 
 
@@ -162,7 +162,7 @@
     border: none;
     color: white;
     font-weight: bolder;
-    width: 100px;
+    width: 130px;
     background-color: var(--mi-color-secundario);
     border-radius: 0px 10px 10px 0;
   }
@@ -181,8 +181,7 @@
 
 
 button:hover {
-  background-color: var(--mi-color-secundario);
-  color: #3c3c3c;
+  background-color: var(--mi-color-principal);
 }
 
 .contenedor {
