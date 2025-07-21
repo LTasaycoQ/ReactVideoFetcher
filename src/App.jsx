@@ -6,6 +6,13 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+
+  const limpieza = async() => {
+    setData(null);
+    fetchApi();
+
+  }
+
   const fetchApi = async () => {
     setLoading(true);
     setError(null);
@@ -15,7 +22,7 @@ function App() {
       return
     }
 
-    const url = `https://agricultural-anjela-ltasaycoqs-765b093c.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
+    const url = `https://fuzzy-parakeet-q7p9x79jrgvw24j7w-8080.app.github.dev/api/download?url=${encodeURIComponent(inputUrl)}`;
 
 
     try {
@@ -36,9 +43,6 @@ function App() {
       setLoading(false);
     }
   };
-
-
-
 
   return (
 
@@ -74,7 +78,7 @@ function App() {
           onChange={(e) => setInputUrl(e.target.value)}
           placeholder="Ingresa la URL del video"
         />
-        <button onClick={fetchApi} disabled={loading || !inputUrl}>
+        <button onClick={limpieza} disabled={loading || !inputUrl}>
           {loading ? 'Cargando...' : 'Buscar'}
         </button>
       </div>
@@ -163,8 +167,6 @@ function App() {
       ) : (
         <div className='divEsperando'>
           {loading ? <div>
-
-
             <svg viewBox="0 0 240 240" height="240" width="240" class="pl">
               <circle
                 stroke-linecap="round"
@@ -213,7 +215,6 @@ function App() {
                 class="pl__ring pl__ring--d"
               ></circle>
             </svg>
-
 
           </div> : "Esperando respuesta..."}
 

@@ -251,7 +251,7 @@ video {
 }
 
 .btnEnlaces a:hover {
-  background-color: rgb(155, 55, 27);
+  background-color: rgb(30, 42, 63);
   transition: all 0.5s;
   color: white;
 }
@@ -319,63 +319,6 @@ video {
   display: none;
 }
 
-.misRedes {
-  position: fixed;
-  display: grid;
-  height: 80%;
-  justify-content: center;
-  align-items: center;
-
-  ul {
-    text-decoration: none;
-    align-items: center;
-    display: grid;
-    text-align: center;
-    justify-content: center;
-
-    li {
-      border: 1px solid rgb(88, 88, 88);
-
-    }
-
-    .Github {
-
-      background-color: #000000;
-      padding: 12px;
-      display: flex;
-    }
-
-    .facebook {
-      background-color: #165990;
-      padding: 12px;
-      display: flex;
-    }
-
-    .linkedin {
-      background-color: #166790;
-      padding: 12px;
-      display: flex;
-    }
-
-    .whatsap {
-      background-color: #249435;
-      padding: 12px;
-      display: flex;
-    }
-
-    .youtube {
-      background-color: #c50000;
-      padding: 12px;
-      display: flex;
-    }
-
-    .email {
-      background-color: #393939;
-      padding: 12px;
-      display: flex;
-    }
-  }
-}
 
 .contendioLadingPage {
   display: grid;
@@ -494,7 +437,7 @@ h1 {
 .decoracion {
   width: 100%;
   height: 10px;
-  background-color: #15b796;
+  background-color: #263867;
 }
 
 
@@ -1247,7 +1190,7 @@ h1 {
   }
 
   .btnOcultoReponsivedebajo {
-    background-color: rgb(22, 83, 90);
+    background-color: rgb(22, 58, 90);
     color: #ffffff;
     width: 620px;
     text-align: center;
@@ -1487,7 +1430,7 @@ h1 {
     background-color: rgb(34, 82, 70);
   }
 
-  .btnCuentaCreador {
+  .btnCuentaCreador { 
     text-align: center;
 
   }
@@ -1515,8 +1458,6 @@ h1 {
     margin-bottom: 40px;
 
     a {
-      background-color: aquamarine;
-      color: #242424;
       font-weight: bolder;
       font-size: 20px;
       padding: 15px;
@@ -1527,9 +1468,6 @@ h1 {
 }
 
 
-
-
-/* From Uiverse.io by uxRakhal */ 
 .pl {
   width: 6em;
   height: 6em;
