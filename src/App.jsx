@@ -22,7 +22,7 @@ function App() {
       return
     }
 
-    const url = `https://agricultural-anjela-ltasaycoqs-765b093c.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
+    const url = `http://agricultural-anjela-ltasaycoqs-765b093c.koyeb.app/api/download?url=${encodeURIComponent(inputUrl)}`;
 
 
     try {
@@ -102,19 +102,19 @@ function App() {
         <div className='contenedor'>
 
           <div className='btnEnlaces'>
-            <a className='btnCuentaCreador' href={data.enlace_video} target="_blank" rel="noopener noreferrer">Cuenta Creador</a>
+            <a className='btnCuentaCreador' href={data.videoUrl} target="_blank" rel="noopener noreferrer">Cuenta Creador</a>
 
-            <a className='btnOcultoReponsive' download href={data.descarga_video}>Descarga el Video</a>
-            <a className='btnOcultoReponsive' download href={data.descarga_audio}>Descarga el Audio</a>
+            <a className='btnOcultoReponsive' download href={data.linkVideo}>Descarga el Video</a>
+            <a className='btnOcultoReponsive' download href={data.linkAudio}>Descarga el Audio</a>
           </div>
 
           <div className='contenido'>
             <div>
               <div className='perfil_user'>
-                <img className='imagen_avatar' src={data.Avatar || "https://kinsta.com/es/wp-content/uploads/sites/8/2022/07/incognito-mode-1024x512.jpg"} alt={data.Nickname} />
+                <img className='imagen_avatar' src={data.avatar || "https://kinsta.com/es/wp-content/uploads/sites/8/2022/07/incognito-mode-1024x512.jpg"} alt={data.Nickname} />
                 <div className='letras_titulo'>
-                  <span className='nombreCreador'>Nombre:  {data.Nickname || "Desconocido"}</span>
-                  <span className='titulo'>{data.titulo}</span>
+                  <span className='nombreCreador'>Nombre:  {data.nickname || "Desconocido"}</span>
+                  <span className='titulo'>{data.title}</span>
                   <span className='firma'>ADS - Write To quatravfxcontact@gmail.com</span>
                 </div>
               </div>
@@ -127,18 +127,18 @@ function App() {
                         <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
                         <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
                       </svg>
-                      {data.Vistas || "privado"}
+                      {data.views || "privado"}
                     </li>
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill=" currentColor" class=" comentarios bi bi-chat-fill" viewBox="0 0 16 16">
                         <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15" />
                       </svg>
-                      {data.Comentarios || "privado"}
+                      {data.comments || "privado"}
                     </li>
                     <li>
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class=" corazon bi bi-heart-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
-                      </svg> {data.Like || "privado"}
+                      </svg> {data.like || "privado"}
                     </li>
 
 
@@ -146,20 +146,20 @@ function App() {
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="share bi bi-share" viewBox="0 0 16 16">
                         <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" />
                       </svg>
-                      {data.Compartidos || "privado"}
+                      {data.shared || "privado"}
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
             <div className='divVideo'>
-              <video poster={data.Portada} controls src={data.descarga_video}></video>
+              <video poster={data.frontPage} controls src={data.linkVideo}></video>
             </div>
           </div>
 
           <div className='btnOCultosDescagas'>
-            <a className='btnOcultoReponsivedebajo' download href={data.descarga_video} >Descarga el Video</a>
-            <a className='btnOcultoReponsivedebajo' download href={data.descarga_audio} >Descarga el Audio</a>
+            <a className='btnOcultoReponsivedebajo' download href={data.linkVideo} >Descarga el Video</a>
+            <a className='btnOcultoReponsivedebajo' download href={data.linkAudio} >Descarga el Audio</a>
 
           </div>
 
