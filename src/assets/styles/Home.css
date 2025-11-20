@@ -1,0 +1,185 @@
+.btnDescargarAudio,
+.buttonDescarga {
+  padding: 5px;
+}
+
+.detalleRedVideos {
+  padding: 9px;
+}
+
+.containerDisco {
+  margin-top: -110px;
+}
+
+.containerReproductor {
+  margin-top: 10px;
+}
+
+.containerCreador {
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.containerDescargarVideo {
+  margin-top: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.btnAudioReproductor,
+.containerSelectRed button {
+  cursor: pointer;
+}
+
+.containerSelectRed,
+.tittleDescargarVideo {
+  margin-top: 17px;
+
+}
+
+.btnDescargar {
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.inputDescargar {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.usuarioContainer {
+  margin-top: 15px;
+  padding: 5px;
+}
+
+
+
+.containerAudio {
+  padding: 15px;
+}
+
+.containerVideoDescarga {
+  padding: 10px;
+}
+
+.containerDescargador {
+  padding-bottom: 15px;
+}
+
+.contenidoVideos {
+  margin-left: 260px;
+  margin-right: 20px;
+}
+
+
+@media (max-width: 1024px) {
+  .contenidoVideos {
+    margin-left: 20px;
+  }
+
+}
+
+@media (max-width:  768px) {
+  .containerCreador {
+    margin-top: 0px;
+  }
+
+  .containerDescargador {
+    padding-bottom: 0px;
+  }
+
+}
+
+
+
+.circleDiscoImage {
+  margin-left: 55px;
+  margin-top: 55px;
+}
+
+.containerDisco {
+  animation: giro-continuo 5s linear infinite;
+}
+
+@keyframes giro-continuo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.listaItemsVideos {
+  scroll-behavior: smooth;
+}
+
+
+
+.pfp {
+  position: relative;
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.playing {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 1px;
+}
+
+.greenline {
+  background-color: #e2e2e2;
+  height: 30px;
+  width: 2px;
+  position: relative;
+  transform-origin: bottom;
+}
+
+.line-1 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.line-2 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.line-3 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.6s;
+}
+
+.line-4 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0s;
+}
+
+.line-5 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+@keyframes playing {
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  33% {
+    transform: scaleY(0.6);
+  }
+
+  66% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleY(0.1);
+  }
+}
