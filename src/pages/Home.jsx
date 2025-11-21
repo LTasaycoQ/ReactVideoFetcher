@@ -357,7 +357,7 @@ function Home() {
 
                     </div>
                   </div>
-                  <div className='containerVideoDescarga max-sm:w-full bg-[#2A2D3C] rounded-xl w-[50%] '>
+                  <div className='containerVideoDescarga 2xl:h-[600px]  max-sm:w-full bg-[#2A2D3C] rounded-xl w-[50%] '>
                     <video className=' rounded-lg  bg-black w-full h-[400px] 2xl:h-full'
                       poster={data.frontPage}
                       controls
