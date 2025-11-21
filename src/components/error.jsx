@@ -1,6 +1,6 @@
 function Error() {
     return (
-        <div className='container_error flex max-md:h-full h-[600px] items-center justify-center '>
+        <div className='container_error flex max-md:h-full h-[42.5em] items-center justify-center '>
 
             <div className="error max max-lg: font-black text-gray-400 gap-[15px] flex flex-col items-center justitfy-center">
                 <p>Error al procesar .Por favor vuela a intentar</p>

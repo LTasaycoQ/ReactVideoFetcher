@@ -165,11 +165,11 @@ function Home() {
 
                   {data ? (
                     <div className='w-full h-full  flex flex-col items-center justify-between'>
-                      <div className="w-[100%] z-1 rounded-xl h-[140px] bg-[url('https://img3.wallspic.com/crops/3/9/8/5/7/175893/175893-anime-arte_animado-edificio-afterglow-atardecer-1366x768.jpg')] bg-cover no-repeat"></div>
+                      <div className="w-[100%] z-1 rounded-xl h-[140px] 2xl:h-[180px] bg-[url('https://img3.wallspic.com/crops/3/9/8/5/7/175893/175893-anime-arte_animado-edificio-afterglow-atardecer-1366x768.jpg')] bg-cover no-repeat"></div>
                       <div className="containerDisco relative z-2">
-                        <img src={data.avatar} className="circleDiscoImage  bg-cover no-repeat absolute bg-gray-400 rounded-full w-[40px]  h-[40px]" />
+                        <img src={data.avatar} className="circleDiscoImage  bg-cover no-repeat absolute bg-gray-400 rounded-full w-[40px] 2xl:w-[65px]" />
 
-                        <img src="./src/assets/disco.png" className='w-[150px] h-[150px]' alt="" />
+                        <img src="./src/assets/imagen/disco.webp" className='w-[150px]   2xl:w-[200px]' alt="" />
                       </div>
                       <div className="flex flex-col gap-[30px] items-center justify-between  w-full  containerReproductor">
 
