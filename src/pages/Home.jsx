@@ -169,7 +169,7 @@ function Home() {
                       <div className="containerDisco relative z-2">
                         <img src={data.avatar} className="circleDiscoImage  bg-cover no-repeat absolute bg-gray-400 rounded-full w-[40px] 2xl:w-[65px]" />
 
-                        <img src="./src/assets/imagen/disco.webp" className='w-[150px]   2xl:w-[200px]' alt="" />
+                        <img src="https://pngimg.com/uploads/vinyl/vinyl_PNG4.png" className='w-[150px]   2xl:w-[200px]' alt="" />
                       </div>
                       <div className="flex flex-col gap-[30px] items-center justify-between  w-full  containerReproductor">
 
