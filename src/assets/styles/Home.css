@@ -6,9 +6,11 @@
 .detalleRedVideos {
   padding: 9px;
 }
-.containerDescargaAudio{
-  padding-right:32px;
+
+.containerDescargaAudio {
+  padding-right: 32px;
 }
+
 .containerDisco {
   margin-top: -110px;
 }
@@ -20,21 +22,23 @@
 
 
 }
-.containerbtnDownload{
-  margin-top:10px;
+
+.containerbtnDownload {
+  margin-top: 10px;
 }
 
 .containerReproductor {
   margin-top: 10px;
 }
 
-.contenedorTittleAudio{
+.contenedorTittleAudio {
   margin-right: 30px;
   padding: 2px;
   padding-left: 18px;
   padding-right: 18px;
   background-color: rgba(0, 0, 0, 0.747);
 }
+
 .containerCreador {
   padding: 20px;
   margin-top: 15px;
@@ -76,15 +80,18 @@
   padding: 5px;
 }
 
-.seccionAudio{
-  padding-top:14px;
-  padding-bottom:14px;
+.seccionAudio {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
+
+.containerSeccionVideo {
+    margin-bottom:15px;
+  }
 
 
 .containerAudio {
   padding: 15px;
-  margin-bottom:14px;
 }
 
 .containerVideoDescarga {
